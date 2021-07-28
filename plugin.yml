@@ -1,0 +1,12 @@
+name: ServerCore
+main: skh6075\servercore\ServerCore
+author: AvasKr
+api: 3.10.0
+version: 1.0.0
+website: https://github.com/GodVas
+
+permissions:
+  server.dropitem.permission:
+    default: op
+  server.pvp.permission:
+    default: op

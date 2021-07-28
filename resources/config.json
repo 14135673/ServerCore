@@ -1,0 +1,9 @@
+{
+  "drop-worlds": [],
+  "pvp-worlds": [],
+  "gamerule": {
+    "showcoordinates": true
+  },
+  "movement": true,
+  "chatting": true
+}
