@@ -129,16 +129,6 @@ class ServerCore extends PluginBase{
     }
 
     public function sendUpdatedGamerule($players, array $gamerules = []): void{
-        if (!is_array($players)) {
-            $players = [$players];
-        }
-        $pk = new GameRulesChangedPacket();
-        $pk->gameRules = [];
-
-        foreach ($gamerules as $gamerule) {
-            $pk->gameRules[$gamerule] = [1, $this->getGameRuleValue($gamerule)];
-        }
-        Server::getInstance()->broadcastPacket($players, $pk);
     }
 
     public function canChatting(): bool{
